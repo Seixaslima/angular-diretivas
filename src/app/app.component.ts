@@ -12,4 +12,8 @@ import { CardComponent } from "./card/card.component";
 })
 export class AppComponent {
   title = 'angular-diretivas';
+  isAliveAppCard: boolean = true
+  appToggle() {
+    this.isAliveAppCard = !this.isAliveAppCard
+  }
 }
