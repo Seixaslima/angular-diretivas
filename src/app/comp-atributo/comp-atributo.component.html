@@ -10,6 +10,8 @@
   Curso Angular
 </h1>
 
+<ng-content select="p"></ng-content>
+
 <p>Adicione a lista</p>
 <input type="text" [(ngModel)]="item" />
 <button (click)="adicionar()">ADICIONAR</button>
@@ -29,5 +31,7 @@
 <ng-template *ngIf="compIsEnable">
   <a href="#">ADICIONAR NO CARRINHO</a>
 </ng-template>
+
+<ng-content select="h2"></ng-content>
 
 <hr />
