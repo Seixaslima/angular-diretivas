@@ -6,3 +6,36 @@
     {{ i }} - {{ p }}
   </li>
 </ul>
+<button (click)="mudarMenu('default')">Default</button>
+<button (click)="mudarMenu('user')">User</button>
+<button (click)="mudarMenu('admin')">Admin</button>
+<button (click)="mudarMenu('superUser')">SuperUser</button>
+
+<div [ngSwitch]="menuType">
+  <div *ngSwitchDefault>
+    <ul>
+      <li>Faça login</li>
+    </ul>
+  </div>
+  <div *ngSwitchCase="'user'">
+    <ul>
+      <li>editar perfil</li>
+      <li>adicionar cartal</li>
+    </ul>
+  </div>
+  <div *ngSwitchCase="'admin'">
+    <ul>
+      <li>editar perfil</li>
+      <li>adicionar cartal</li>
+      <li>editar usuario</li>
+    </ul>
+  </div>
+  <div *ngSwitchCase="'superUser'">
+    <ul>
+      <li>editar perfil</li>
+      <li>adicionar cartal</li>
+      <li>editar usuario</li>
+      <li>editar admin</li>
+    </ul>
+  </div>
+</div>

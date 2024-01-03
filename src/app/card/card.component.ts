@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class CardComponent {
   produtos: string[] = []
+  menuType: string = "user"
 
   constructor() {
     this.produtos = [
@@ -23,6 +24,10 @@ export class CardComponent {
 
   remover(index: number) {
     this.produtos.splice(index,1)
+  }
+
+  mudarMenu(tipo:string){
+    this.menuType = tipo
   }
 
 }
