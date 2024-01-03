@@ -9,3 +9,13 @@
 >
   Curso Angular
 </h1>
+
+<p>Adicione a lista</p>
+<input type="text" [(ngModel)]="item" />
+<button (click)="adicionar()">ADICIONAR</button>
+<p>{{ item }}</p>
+
+<h3>Lista de compra</h3>
+<ul>
+  <li *ngFor="let elemento of listaItem">{{ elemento }}</li>
+</ul>
