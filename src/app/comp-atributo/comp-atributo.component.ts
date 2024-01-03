@@ -16,6 +16,7 @@ export class CompAtributoComponent {
   corDaLetra:string = 'yellow';
   item:string = '';
   listaItem: string[] = []
+  compIsEnable: boolean = false
 
   trocar() {
     if(this.estilo === "enable") {
