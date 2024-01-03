@@ -1,2 +1,11 @@
 <p [ngClass]="estilo">comp-atributo works!</p>
 <button (click)="trocar()">TROCAR CLASSE</button>
+<h1
+  [ngStyle]="{
+    background: corDeFundo,
+    color: corDaLetra,
+    'text-transform': 'uppercase'
+  }"
+>
+  Curso Angular
+</h1>

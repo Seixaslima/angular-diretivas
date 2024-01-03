@@ -10,7 +10,9 @@ import { Component } from '@angular/core';
 })
 export class CompAtributoComponent {
 
-  estilo:string = "enable"
+  estilo:string = "enable";
+  corDeFundo:string = 'blue';
+  corDaLetra:string = 'yellow'
 
   trocar() {
     if(this.estilo === "enable") {
