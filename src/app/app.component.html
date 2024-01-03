@@ -1,4 +1,7 @@
-<button (click)="appToggle()">alternar igIf</button>
+<app-comp-atributo></app-comp-atributo>
+<div class="container">
+  <button (click)="appToggle()">alternar igIf</button>
+</div>
 <app-card *ngIf="isAliveAppCard; else anotherBlock"></app-card>
 
 <ng-template #anotherBlock>
