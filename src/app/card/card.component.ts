@@ -21,4 +21,8 @@ export class CardComponent {
     ]
   }
 
+  remover(index: number) {
+    this.produtos.splice(index,1)
+  }
+
 }
